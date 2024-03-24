@@ -29,6 +29,9 @@
 
 <!-- https://vue3js.cn/docs/zh/api/options-api.html -->
 <script>
+
+// option api
+//定義資料
 const App = {
   name: '漂亮的元件',
   data() {
@@ -36,11 +39,14 @@ const App = {
       num: 0,
     }
   },
+//方法
   methods: {
     trigger: function() {
       this.num++
     }
   },
+
+  //生命週期
   created() {
     this.num = 1;
     console.log(this);
